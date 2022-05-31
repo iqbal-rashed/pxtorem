@@ -108,20 +108,21 @@ function readConfigFile(fileName) {
 for (let key in options) {
     if (configObj && configObj.hasOwnProperty(key)) {
         const element = options[key];
-        if (Array.isArray(element)) {
-            let concatArr = element.concat(configObj[key]);
-            let finalArr = [];
-            concatArr.forEach((v) => {
-                if (finalArr.length === 0) {
-                    finalArr.push(v);
-                } else if (finalArr.indexOf(v) === -1) {
-                    finalArr.push(v);
-                }
-            });
-            options[key] = finalArr;
-        } else {
-            options[key] = configObj[key];
-        }
+        options[key] = configObj[key];
+        // if (Array.isArray(element)) {
+        //     let concatArr = element.concat(configObj[key]);
+        //     let finalArr = [];
+        //     concatArr.forEach((v) => {
+        //         if (finalArr.length === 0) {
+        //             finalArr.push(v);
+        //         } else if (finalArr.indexOf(v) === -1) {
+        //             finalArr.push(v);
+        //         }
+        //     });
+        //     options[key] = finalArr;
+        // } else {
+        //     options[key] = configObj[key];
+        // }
     }
 }
 

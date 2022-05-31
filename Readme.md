@@ -1,4 +1,4 @@
-# pxtorem
+# pxtorem-css
 
 ### A nodejs cli that convert px to rem in any css file
 

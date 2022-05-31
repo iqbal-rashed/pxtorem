@@ -8,7 +8,6 @@ function getListOfFile(dir, type, fileList) {
     files.forEach((f) => {
         if (!f.startsWith(".")) {
             let filePath = path.join(dir, f);
-
             if (fs.statSync(filePath).isDirectory()) {
                 fileList = getListOfFile(filePath, type, fileList);
             } else {
@@ -27,7 +26,8 @@ function pxtorem(
 ) {
     let finalArr = [];
     dir.forEach((v) => {
-        finalArr = finalArr.concat(getListOfFile(v, type));
+        const finalDir = path.join(process.cwd(), v);
+        finalArr = finalArr.concat(getListOfFile(finalDir, type));
     });
     let finalPathArr = finalArr.map((v) => path.resolve(v)) || [];
 
