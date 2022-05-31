@@ -1,0 +1,25 @@
+{
+    "name": "pxtorem",
+    "version": "1.0.0",
+    "description": "A nodejs cli that convert css unit px to rem",
+    "main": "app.js",
+    "scripts": {},
+    "author": "Rashed Iqbal",
+    "license": "ISC",
+    "bin": {
+        "pxtorem": "./bin/pxtorem"
+    },
+    "keywords": [
+        "pxtorem",
+        "css",
+        "unit",
+        "converter",
+        "px",
+        "rem"
+    ],
+    "dependencies": {
+        "chalk": "^4.1.2",
+        "commander": "^9.3.0",
+        "ora": "^5.4.1"
+    }
+}
