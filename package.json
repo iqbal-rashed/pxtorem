@@ -1,6 +1,6 @@
 {
     "name": "pxtorem-css",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "A nodejs cli that convert css unit px to rem",
     "main": "app.js",
     "scripts": {},

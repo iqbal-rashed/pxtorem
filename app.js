@@ -82,7 +82,8 @@ function pxtorem(
                     flag: "w",
                 });
             } else {
-                fs.writeFileSync(v, changeData, {
+                const destination = path.join(path.dirname(v), fileName);
+                fs.writeFileSync(destination, changeData, {
                     encoding: "utf-8",
                     flag: "w",
                 });

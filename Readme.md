@@ -20,12 +20,12 @@ Features:
 
 Locally:
 ```bash
-npm i pxtorem
+npm i pxtorem-css
 ```
 
 Globally:
 ```bash
-npm i -g pxtorem
+npm i -g pxtorem-css
 ```
 
 ## Usage
