@@ -58,11 +58,11 @@ Options:
 
 `$ pxtorem -d public/css -i box-shadow margin-left padding-left` : change all css file inside public/css dir except box-shadow margin-left padding-left attribute px.<br>
 
-`$ pxtorem -d public/css -r my/name/rem/.ext` : change all css filename example: style.css to mystylerem.css<br>
+`$ pxtorem -d public/css -r my/name/rem/.ext` : change all css filename example: style.css to mystylerem.css and you must follow this pattern {your custom text before name}/name/{your custom text after name}/.ext<br>
 
 `$ pxtorem -c pxtorem.json` : Customize your options with json file in your project folder<br>
 
-`$ pxtorem -init` : generate pxtorem.config.json (or you can give custom name) into your project folder<br>
+`$ pxtorem -init` : generate pxtorem.config.json (or you can give custom name by passing value after -init) into your project folder<br>
 
 ### pxtorem.json Example
 ```bash

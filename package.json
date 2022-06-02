@@ -1,13 +1,19 @@
 {
     "name": "pxtorem-css",
-    "version": "1.0.3",
+    "version": "1.0.5",
     "description": "A nodejs cli that convert css unit px to rem",
     "main": "app.js",
-    "scripts": {},
     "author": "Rashed Iqbal",
-    "license": "ISC",
+    "license": "MIT",
     "bin": {
         "pxtorem": "./bin/pxtorem"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/iqbal-rashed/pxtorem-css"
+    },
+    "bugs": {
+        "url": "https://github.com/iqbal-rashed/pxtorem-css/issues"
     },
     "keywords": [
         "pxtorem",
