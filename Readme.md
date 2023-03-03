@@ -5,30 +5,34 @@
 <br>
 
 ## Description
-Convert px to rem in css with advanced functionality. pxtorem helps you reduce time when you write css code. This tool build with pure nodejs.
+
+pxtorem-css is a command line interface tool that converts pixel values to rem values in any CSS file. This tool is built using pure Node.js and comes with several advanced features to help you save time when writing CSS code.
 
 Features:
 
-* You can convert px to rem in css anywhere within a second.
-* You can choose css directory and also output directory.
-* You can include and exclude css file when convert
-* Even you can ignore css attribute not to convert
-* You can customize options with pxtorem.config.json in your project
-
+-   Converts px to rem in CSS files quickly and easily
+-   Allows you to choose the CSS directory and output directory
+-   Enables you to include and exclude specific CSS files for conversion
+-   Allows you to ignore specific CSS attributes that you don't want to convert
+-   You can customize the tool's options with a pxtorem.config.json file in your project
+-   Can be installed both locally and globally using npm/
 
 ## Installation
 
 Locally:
+
 ```bash
 npm i pxtorem-css
 ```
 
 Globally:
+
 ```bash
 npm i -g pxtorem-css
 ```
 
 ## Usage
+
 ```bash
 $ pxtorem [options]
 
@@ -48,6 +52,7 @@ Options:
 ```
 
 ### Example
+
 `$ pxtorem` : change all directories css file. <br>
 
 `$ pxtorem -d public/css` : change all css file inside public/css dir.<br>
@@ -65,6 +70,7 @@ Options:
 `$ pxtorem -init` : generate pxtorem.config.json (or you can give custom name by passing value after -init) into your project folder<br>
 
 ### pxtorem.json Example
+
 ```bash
 {
     "size": "16",
@@ -79,6 +85,7 @@ Options:
 ```
 
 ## Contribution
+
 If you want to contribute or report any bug, you welcome
 
 <br>
